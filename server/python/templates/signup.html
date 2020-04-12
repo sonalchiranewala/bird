@@ -1,0 +1,20 @@
+<html>
+    <body style="background-color:white">
+    <h1 style="color:purple;text-align:center;margin-top:100px">Let's go!</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+	<p style="color:black;text-align:center;" id="blurb">
+Welcome to my landing page! If you are feeling supportive, buy my starter pack by entering your info and clicking the submit button below. 
+	</p>
+        <p style="color:black;text-align:center;">
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p style="color:black;text-align:center;">
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}
+        </p>
+        <p style="color:black;text-align:center;">{{ form.submit() }}</p>
+    </form>
+    </body>
+</html>
